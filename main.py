@@ -1,3 +1,5 @@
+import math
+
 # decalre list
 points_per_game = [12.8, 2.3, 2.5, 10.6, 0.0, 11.8, 11.3, 5.8, 4.7, 10.8, 17.3, 0.0, 5.9]
 
@@ -10,3 +12,15 @@ points_per_game_sorted = sorted(points_per_game, reverse=True)
 
 print(" \nList sorted in descending order:")
 print(points_per_game_sorted)
+
+points_per_game = [12.8, 2.3, 2.5, 10.6, 0.0, 11.8, 11.3, 5.8, 4.7, 10.8, 17.3, 0.0, 5.9]
+#count of nums
+count = len(points_per_game)
+print(f"\nCount of numbers: {count}")
+
+#mean
+mean = sum(points_per_game) / count
+print (f"\nMean (average) of set: {mean:.2f}") #round
+
+
+
