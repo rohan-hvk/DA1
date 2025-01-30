@@ -22,5 +22,18 @@ print(f"\nCount of numbers: {count}")
 mean = sum(points_per_game) / count
 print (f"\nMean (average) of set: {mean:.2f}") #round
 
+#smallest and largest
+smallest = min(points_per_game)
+largest = max(points_per_game)
+print(f"\nsmallest number is: {smallest}")
+print(f"largest number is: {largest}")
 
+#median
+SortedList = sorted(points_per_game)
+middle = len(SortedList) // 2 #find middle index
 
+if len(SortedList) % 2 == 0:
+    median = (SortedList[middle - 1] + SortedList[middle]) / 2 #finds avg of two middle elements if list is even
+else:
+    median = SortedList[middle] #if list is odd
+print(f"\nMedian is: {median}")
