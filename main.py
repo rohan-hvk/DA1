@@ -37,3 +37,18 @@ if len(SortedList) % 2 == 0:
 else:
     median = SortedList[middle] #if list is odd
 print(f"\nMedian is: {median}")
+
+
+
+points_per_game = [12.8, 2.3, 2.5, 10.6, 0.0, 11.8, 11.3, 5.8, 4.7, 10.8, 17.3, 0.0, 5.9]
+start = float(input("Enter the starting value: "))
+end = float(input("Enter the ending value: "))
+
+
+for i in range(len(points_per_game)):#replace all values in range with 0 and iterate
+    if start <= points_per_game[i] <= end:
+        points_per_game[i] = 0
+
+#the modified list
+print("\nModified list:")
+print(points_per_game)
